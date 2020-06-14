@@ -7,15 +7,13 @@ public class DayOfWeek {
   
   public static String findDay(int day, int month, int year) {
     int m;
-    int d;
-    if (month < 3) {
-      m = month + 10;
-      d = year % 100 - 1;
-    } else {
-      m = month - 2;
-      d = year % 100;
-    }
+    int d = year % 100;
     int c = year / 100;
+    if (month < 3) {
+      m = month + 12;
+      d--;
+      c--;
+    } else m = month - 2;
 
     int f = day + (int)((13*m-1)/5) + d + (int)d/4 + (int)c/4 - 2*c;
     f = f < 0 ? negHandler(f) : f % 7;
