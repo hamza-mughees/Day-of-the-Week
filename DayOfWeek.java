@@ -16,7 +16,7 @@ public class DayOfWeek {
     int d = year % 100;
     int c = year / 100;
 
-    int f = day + (int)((13*m-1)/5) + d + (int)d/4 + (int)c/4 - 2*c;
+    int f = day + (int)((13*m-1)/5) + d + (int)(d/4) + (int)(c/4) - 2*c;
     f = f < 0 ? negHandler(f) : f % 7;
 
     switch (f) {
