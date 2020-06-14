@@ -1,11 +1,11 @@
 public class DayOfWeek {
   public static void main(String[] args) {
-    System.out.println(findDay(5, 10, 1952));
-    System.out.println(findDay(14, 8, 1947));
-    System.out.println(findDay(1, 1, 2000));
+    System.out.println(getDay(5, 10, 1952));
+    System.out.println(getDay(14, 8, 1947));
+    System.out.println(getDay(1, 1, 2000));
   }
   
-  public static String findDay(int day, int month, int year) {
+  public static String getDay(int day, int month, int year) {
     int m;
     
     if (month < 3) {
