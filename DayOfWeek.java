@@ -6,36 +6,36 @@ public class DayOfWeek {
   }
   
   public static String findDay(int day, int month, int year) {
-    int m;
-    int d;
-    if (month < 3) {
-      m = month + 10;
-      d = year % 100 - 1;
-    } else {
-      m = month - 2;
-      d = year % 100;
-    }
-    int c = year / 100;
+		int m;
+		int d;
+		if (month < 3) {
+			m = month + 10;
+			d = year % 100 - 1;
+		} else {
+			m = month - 2;
+			d = year % 100;
+		}
+		int c = year / 100;
 
-    int dayOfWeek = day + ((13*m-1)/5) + d + d/4 + c/4 - 2*c;
-    dayOfWeek = dayOfWeek < 0 ? negHandler(dayOfWeek) : dayOfWeek % 7;
+		int f = day + (int)((13*m-1)/5) + d + (int)d/4 + (int)c/4 - 2*c;
+		f = f < 0 ? negHandler(f) : f % 7;
 
-    switch (dayOfWeek) {
-      case 0: return "SUNDAY";
-      case 1: return "MONDAY";
-      case 2: return "TUESDAY";
-      case 3: return "WEDNESDAY";
-      case 4: return "THURSDAY";
-      case 5: return "FRIDAY";
-      case 6: return "SATURDAY";
-      default: return "CALCULATION FAILED";
-    }
-  }
+		switch (f) {
+			case 0: return "SUNDAY";
+			case 1: return "MONDAY";
+			case 2: return "TUESDAY";
+			case 3: return "WEDNESDAY";
+			case 4: return "THURSDAY";
+			case 5: return "FRIDAY";
+			case 6: return "SATURDAY";
+			default: return "CALCULATION FAILED";
+		}
+	}
 	
-	public static int negHandler(int n) {
-    int r = 0;
-    while (r > n)
-      r -= 7;
-    return n - r;
-  }
+	public static int negHandler(int f) {
+		int m = 0;
+		while (m > f)
+			m -= 7;
+		return f - m;
+	}
 }
