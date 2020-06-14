@@ -20,11 +20,32 @@ Zeller's rule states:
 <img src="https://github.com/hamza-mughees/Day-of-the-Week/blob/master/formula.png" width="600">
 
 where
-- ***f*** is the day of the week (i.e. 0: Sunday, 1: Monday, ...)
-- ***k*** is the day of the month
-- ***m*** is the month of the year
-- ***D*** is the number of decades in the century up to the year (i.e. year % 100)
-- ***C*** is the number of centuries up to the century (i.e. year / 100)
+* ***f*** is the day of the week
+  * 0 → Sunday
+  * 1 → Monday
+  * 2 → Tuesday
+  * 3 → Wednesday
+  * 4 → Thursday
+  * 5 → Friday
+  * 6 → Saturday
+* ***k*** is the day of the month
+* ***m*** is the month of the year
+  * January → 11
+  * February → 12
+  * March → 1
+  * April → 2
+  * May → 3
+  * June → 4
+  * July → 5
+  * August → 6
+  * September → 7
+  * October → 8
+  * November → 9
+  * December → 10
+* ***D*** is the number of decades in the century up to the year (i.e. year % 100)
+  * When month is January or February, ***D*** is decremented
+* ***C*** is the number of centuries up to the century (i.e. year / 100)
+  * When month is January or February, ***C*** is decremented
 
 For some dates, there are cases where ***f*** evaluates to a negative number. The rule provides a work-around for such a case as follows:
 
