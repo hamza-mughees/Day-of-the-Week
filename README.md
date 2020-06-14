@@ -15,16 +15,17 @@ Despite this, I thought it would be fun to make my own method, which uses Zeller
 
 Zeller's rule states the following:
 
+<img src="https://github.com/hamza-mughees/Day-of-the-Week/blob/master/formula.png" width="600">
 
-
+where
 - ***f*** is the day of the week (i.e. 0: Sunday, 1: Monday, ...)
 - ***k*** is the day of the month
 - ***m*** is the month of the year
 - ***D*** is the number of decades in the century up to the year (i.e. year % 100)
 - ***C*** is the number of centuries up to the century (i.e. year / 100)
 
-For some dates, there are cases where ***f*** can come out as negative. The rule provides a work-around for such cases as follows:
+For some dates, there are cases where ***f*** evaluates to a negative number. The rule provides a work-around for such a case as follows:
 
-- Find the smallest multiple of 7 that is greater than or equal to f
-- Subtract this multiple of 7, from f
-- Let this value be equal to f
+- Find the largest multiple of 7 that is less than or equal to ***f***
+- Subtract this multiple of 7, from ***f***
+- Let this value become the new ***f***
