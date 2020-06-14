@@ -43,9 +43,9 @@ where
   * November → 9
   * December → 10
 * ***D*** is the number of decades in the century up to the year (i.e. year % 100)
-  * When month is January or February, ***D*** is decremented
+  * When month is January or February, ***D*** of the previous year is used
 * ***C*** is the number of centuries up to the century (i.e. year / 100)
-  * When month is January or February, ***C*** is decremented
+  * When month is January or February, ***C*** of the previous year is used
 
 For some dates, there are cases where ***f*** evaluates to a negative number. The rule provides a work-around for such a case as follows:
 
