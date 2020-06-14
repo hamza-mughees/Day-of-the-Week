@@ -11,7 +11,7 @@ public class DayOfWeek {
     int c = year / 100;
     if (month < 3) {
       m = month + 10;
-      d--;
+      d = d == 0 ? 99 : d - 1;
       c--;
     } else m = month - 2;
 
