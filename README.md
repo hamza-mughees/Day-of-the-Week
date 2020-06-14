@@ -7,7 +7,7 @@ There is a much easier, buit-in way to get the day of the year, you have to be u
 The following is the same method as in the code, however, it has been written using this way of obtaining the day of the year:
 
 ```java
-public static String findDay(int day, int month, int year) {
+public static String getDay(int day, int month, int year) {
   LocalDate date = LocalDate.of(year, month, day);
   return date.getDayOfYear().name();
 }
