@@ -2,7 +2,7 @@
 
 There is a much easier, buit-in way to get the day of the year, you have to be using Java 8, however. In order to use that, you must ```import java.time.LocalDate;```
 
-The following is the same method, written using this way of obtaining the day of the year:
+The following is the same method as in the code, however, it has been written using this way of obtaining the day of the year:
 
 ```java
 public static String findDay(int day, int month, int year) {
@@ -11,9 +11,9 @@ public static String findDay(int day, int month, int year) {
 }
 ```
 
-Despite this, I thought it would be fun to make my own method, which uses Zeller's rule to calculate the day of the week for any given date.
+Despite of this, I thought it would be fun to make my own method, which uses Zeller's rule to calculate the day of the week for any given date.
 
-Zeller's rule states the following:
+Zeller's rule states:
 
 <img src="https://github.com/hamza-mughees/Day-of-the-Week/blob/master/formula.png" width="600">
 
