@@ -2,9 +2,9 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/hamza-mughees/Day-of-the-Week)](https://repl.it/github/hamza-mughees/Day-of-the-Week)
 
-There is a much easier, buit-in way to get the day of the year, you have to be using Java 8, however. In order to use that, you must ```import java.time.LocalDate;```
+There is a much easier, buit-in way to get the day of the year for a given date, you have to be using Java 8, however. In order to use that, you must ```import java.time.LocalDate;```
 
-The following is the same method as in the code, however, it has been written using this way of obtaining the day of the year:
+The following is the same method as in the code, however, it has been written using built-in way of obtaining the day of the year:
 
 ```java
 public static String getDay(int day, int month, int year) {
