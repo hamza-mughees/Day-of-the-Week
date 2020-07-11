@@ -28,8 +28,8 @@ where
   * 4 → Thursday
   * 5 → Friday
   * 6 → Saturday
-* ***k*** is the day of the month
-* ***m*** is the month of the year
+* $k$ is the day of the month
+* $m$ is the month of the year
   * January → 11
   * February → 12
   * March → 1
@@ -42,13 +42,13 @@ where
   * October → 8
   * November → 9
   * December → 10
-* ***D*** is the number of decades in the century up to the year (i.e. year % 100)
-  * When month is January or February, ***D*** of the previous year is considered
-* ***C*** is the number of centuries up to the century (i.e. year / 100)
-  * When month is January or February, ***C*** of the previous year is considered
+* $D$ is the number of decades in the century up to the year (i.e. year % 100)
+  * When month is January or February, $D$ of the previous year is considered
+* $C$ is the number of centuries up to the century (i.e. year / 100)
+  * When month is January or February, $C$ of the previous year is considered
 
-For some dates, there are cases where ***f*** evaluates to a negative number. The rule provides a work-around for such a case as follows:
+For some dates, there are cases where $f$ evaluates to a negative number. The rule provides a work-around for such a case as follows:
 
-- Find the largest multiple of 7 that is less than or equal to ***f***
-- Subtract this multiple of 7, from ***f***
-- Let this value become the new ***f***
+- Find the largest multiple of 7 that is less than or equal to $f$
+- Subtract this multiple of 7, from $f$
+- Let this value become the new $f$
