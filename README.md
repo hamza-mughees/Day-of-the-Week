@@ -20,7 +20,7 @@ Zeller's rule states:
 <p align="center"><img src="/tex/992851f34bb381e6ba7d3c908bbc80a5.svg?invert_in_darkmode&sanitize=true" align=middle width=369.00571949999994pt height=39.452455349999994pt/></p>
 
 where
-* ***f*** is the day of the week
+* <img src="/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/> is the day of the week
   * 0 → Sunday
   * 1 → Monday
   * 2 → Tuesday
