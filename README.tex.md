@@ -17,7 +17,7 @@ Despite of this, I thought it would be fun to make my own method, which uses Zel
 
 Zeller's rule states:
 
-$$f=\left ( k+\left \lfloor \frac{13(m-1)}{2} \right \rfloor +D+\left \lfloor \frac{D}{4} \right \rfloor + \left \lfloor \frac{C}{2} \right \rfloor -2C \right )$$
+$$f=\left ( k+\left \lfloor \frac{13(m-1)}{5} \right \rfloor +D+\left \lfloor \frac{D}{4} \right \rfloor + \left \lfloor \frac{C}{2} \right \rfloor -2C \right )$$
 
 where
 * $f$ is the day of the week
