@@ -28,8 +28,8 @@ where
   * 4 → Thursday
   * 5 → Friday
   * 6 → Saturday
-* ***k*** is the day of the month
-* ***m*** is the month of the year
+* <img src="/tex/63bb9849783d01d91403bc9a5fea12a2.svg?invert_in_darkmode&sanitize=true" align=middle width=9.075367949999992pt height=22.831056599999986pt/> is the day of the month
+* <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/> is the month of the year
   * January → 11
   * February → 12
   * March → 1
@@ -42,13 +42,13 @@ where
   * October → 8
   * November → 9
   * December → 10
-* ***D*** is the number of decades in the century up to the year (i.e. year % 100)
-  * When month is January or February, ***D*** of the previous year is considered
-* ***C*** is the number of centuries up to the century (i.e. year / 100)
-  * When month is January or February, ***C*** of the previous year is considered
+* <img src="/tex/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode&sanitize=true" align=middle width=14.06623184999999pt height=22.465723500000017pt/> is the number of decades in the century up to the year (i.e. year % 100)
+  * When month is January or February, <img src="/tex/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode&sanitize=true" align=middle width=14.06623184999999pt height=22.465723500000017pt/> of the previous year is considered
+* <img src="/tex/9b325b9e31e85137d1de765f43c0f8bc.svg?invert_in_darkmode&sanitize=true" align=middle width=12.92464304999999pt height=22.465723500000017pt/> is the number of centuries up to the century (i.e. year / 100)
+  * When month is January or February, <img src="/tex/9b325b9e31e85137d1de765f43c0f8bc.svg?invert_in_darkmode&sanitize=true" align=middle width=12.92464304999999pt height=22.465723500000017pt/> of the previous year is considered
 
-For some dates, there are cases where ***f*** evaluates to a negative number. The rule provides a work-around for such a case as follows:
+For some dates, there are cases where <img src="/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/> evaluates to a negative number. The rule provides a work-around for such a case as follows:
 
-- Find the largest multiple of 7 that is less than or equal to ***f***
-- Subtract this multiple of 7, from ***f***
-- Let this value become the new ***f***
+- Find the largest multiple of 7 that is less than or equal to <img src="/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/>
+- Subtract this multiple of 7, from <img src="/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/>
+- Let this value become the new <img src="/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/>
